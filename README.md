@@ -1,6 +1,6 @@
 # Replication: Clergy Political Actions & Agendas
 
-This repository provides the replication files for the LCA analyses in the paper *Clergy Political Actions and Agendas: New Findings from the National Survey of Religious Leaders*, forthcoming at *Sociological Focus* journal.
+This repository provides the replication files for the paper *Clergy Political Actions and Agendas: New Findings from the National Survey of Religious Leaders*, forthcoming at *Sociological Focus* journal.
 
 The pre-print version of the paper is stored at [SocArXiv](https://osf.io/preprints/socarxiv/c6qen/).
 
