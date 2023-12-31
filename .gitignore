@@ -1,0 +1,31 @@
+### Outputs ###
+*.pdf
+*.tex
+*.html
+*.docx
+
+### R ###
+
+# history files
+.Rhistory
+.DS_Store
+.Rapp.history
+# session data files
+.RData
+.RDataTmp
+# Output files from R CMD build
+/*.tar.gz
+# Output files from R CMD check
+/*.Rcheck/
+# rstudio files
+.Rproj.user/
+*.rds
+*.RDS
+# knitr and RMarkdown default cache directories
+*_cache/
+/cache/
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+# R environment variables
+.Renviron

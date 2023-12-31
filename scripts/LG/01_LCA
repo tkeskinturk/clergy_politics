@@ -1,0 +1,496 @@
+//LG6.0//
+version = 6.0
+infile '\...\data_nsrl.sav'
+
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 1;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 2;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 3;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 5;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 6;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 7;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 8;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 9;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 10;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+   actcapun <-> actabort ;
+   actlgbt <-> actabort ;
+   actgun <-> actabort ;
+   acthungr <-> actecon ;
+   actrace <-> actlgbt ;
+   actrace <-> actpolic ;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent actabort nominal, actcapun nominal, actecon nominal,
+      acteduc nominal, actenvir nominal, actforgn nominal, actlgbt nominal,
+      actgun nominal, actheal nominal, acthungr nominal, actimm nominal,
+      actpolic nominal, actrace nominal;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   actabort <- 1 + Cluster;
+   actcapun <- 1 + Cluster;
+   actecon <- 1 + Cluster;
+   acteduc <- 1 + Cluster;
+   actenvir <- 1 + Cluster;
+   actforgn <- 1 + Cluster;
+   actlgbt <- 1 + Cluster;
+   actgun <- 1 + Cluster;
+   actheal <- 1 + Cluster;
+   acthungr <- 1 + Cluster;
+   actimm <- 1 + Cluster;
+   actpolic <- 1 + Cluster;
+   actrace <- 1 + Cluster;
+   actcapun <-> actabort ;
+   actlgbt <-> actabort ;
+   actgun <-> actabort ;
+   acthungr <-> actecon ;
+   actrace <-> actlgbt ;
+   actrace <-> actpolic ;
+end model
